@@ -14,8 +14,8 @@
     "should": "^13.2.3"
   },
   "scripts": {
-    "test": "mocha app.spce.js",
-    "start": "node app.js"
+    "test": "NODE_ENV=test mocha api/user/user.spce.js",
+    "start": "node bin/www.js"
   },
   "author": "",
   "license": "ISC"
