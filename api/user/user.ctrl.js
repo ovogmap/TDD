@@ -19,8 +19,6 @@ const show = (req, res) => {
     return res.status(400).end();
   }
 
-  // findOne - 하나의 값을 찾을때
-  // where: { id } - 찾아야 하는 값의 조건
   models.User.findOne({
     where: { id },
   }).then((user) => {
